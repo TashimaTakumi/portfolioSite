@@ -45,7 +45,7 @@ body{
     background-color: white;
     transition: opacity 1s , width 1s , height 1s;
     border: solid 0.5px #6c6c6c;
-    box-shadow: 4px 8px 12px 0px #6c6c6c;
+    box-shadow: 0px 0px 12px 0px #777;
     overflow: scroll;
     overflow-x: hidden;
     #modalContentsContainer{
@@ -53,6 +53,7 @@ body{
       margin: 8vh 8vw;
       visibility: hidden;
       opacity: 0;
+      transition: opacity 0.2s;
       #modalTopImgContainer{
         width:100%;
         height:75vh;
@@ -79,16 +80,45 @@ body{
           margin: 0 7.5%;
           >p{
             font-size:1.1em;
+            line-height: 2em;
+          }
+        }
+
+        #workSiteURLContainer{
+          display: none;
+          width:32%;
+          height:8vh;
+          margin:8vh auto 0;
+          #workSiteURL{
+            text-align: center;
+            width:100%;
+            height:100%;
+            text-decoration: none;
+            >div{
+              width:100%;
+              background-color: white;
+              height:100%;;
+              margin:0 auto;
+              border:3px #6c6c6c solid;
+              border-radius: 16vh;
+              transition: background-color 0.2s linear;
+              &:hover{
+                background-color: #c6c6c6;
+              }
+              >p{
+                font-size:120%;
+              }
+            }
           }
         }
 
         #pointsOfWork{
           display:flex;
           justify-content: space-between;
-          margin-top:16vh;
+          margin-top:24vh;
           >article{
             width:32%;
-            height:55vh;
+            height:75vh;
             background-color: #f8f8f8;
             padding:1.5vh 0;
             >h3{
@@ -117,7 +147,7 @@ body{
         #listOfAboutInfo{
           display: flex;
           justify-content: space-between;
-          margin: 16vh 7.5% 0;
+          margin: 24vh 7.5% 0;
           h3{
             font-size:120%;
           }
@@ -132,8 +162,10 @@ body{
           }
         }
       }
-      #goToNextButton{
-        margin:10vh 0;
+      #goToButton{
+        margin:16vh 0;
+        display: flex;
+        justify-content: space-between;
         >div{
           text-align: center;
           >button{
@@ -387,6 +419,7 @@ body{
         >article{
           width:25%;
           >h3{
+            color:#1f1f1f;
             font-size: 200%;
             font-family: "游明朝";
             margin-top:0;
@@ -406,8 +439,10 @@ body{
         text-align: center;
         line-height: 300%;
         font-size:130%;
+        color:#1f1f1f;
         >span{
           font-family: "游明朝";
+          color:black;
         }
       }
       >div{
