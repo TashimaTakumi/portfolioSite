@@ -1,0 +1,481 @@
+body{
+  margin:0;
+  padding:0;
+  position:relative;
+  p{
+    font-family: "游ゴシック";
+    color:#0f0f0f;
+    font-weight:400;
+  }
+  #cancelButtonContainer{
+    position:fixed;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s;
+    right:12.5vw;
+    top:5vh;
+    z-index: 102;
+    >button{
+      cursor: pointer;
+      width:3vw;
+      height:3vw;
+      background-color: white;
+      border-radius: 50%;
+      border-right: none;
+      border-bottom:none;
+      box-shadow: 1px 2px 4px 0px #6c6c6c;
+      &:hover{
+        background-color: #c6c6c6;
+      }
+      >p{
+        margin:0;
+        font-size:calc(16px * 1.5);
+      }
+    }
+  }
+  #modalWindow{
+    position:fixed;
+    visibility: visible;
+    opacity:1;
+    top:0;left:0;bottom:0;right:0;
+    margin:auto;
+    z-index: 101;
+    width:80vw;
+    height:95vh;
+    background-color: white;
+    transition: opacity 1s , width 1s , height 1s;
+    border: solid 0.5px #6c6c6c;
+    box-shadow: 4px 8px 12px 0px #6c6c6c;
+    overflow: scroll;
+    overflow-x: hidden;
+    #modalContentsContainer{
+      width:calc(100% - 8vw * 2);
+      margin: 8vh 8vw;
+      #modalTopImgContainer{
+        width:100%;
+        height:75vh;
+        margin:0;
+        >img{
+          width:100%;
+          height:100%;
+          object-fit: cover;
+        }
+      }
+      #modalTitleContainer{
+        >h1{
+          font-family: "游明朝";
+          margin: 4vh 0 0;
+          text-align: center;
+          font-size:300%;
+        }
+      }
+
+      #descriptionThisModal{
+        margin-bottom:24vh;
+        #aboutInfo{
+          display: block;
+          margin: 0 7.5%;
+          >p{
+            font-size:1.1em;
+          }
+        }
+
+        #pointsOfWork{
+          display:flex;
+          justify-content: space-between;
+          margin-top:16vh;
+          >article{
+            width:32%;
+            height:55vh;
+            background-color: #f8f8f8;
+            padding:1.5vh 0;
+            >h3{
+              text-align: center;
+              margin:1vh 0;
+              font-weight: 400;
+            }
+            >figure{
+              margin:0;
+              width:90%;
+              height:24vh;
+              margin:0 auto;
+              margin-top:1vh;
+              >img{
+                width:100%;
+                height:100%;
+                object-fit: cover;
+              }
+            }
+            >p{
+              width:80%;
+              margin:2vh auto;
+            }
+          }
+        }
+        #listOfAboutInfo{
+          display: flex;
+          justify-content: space-between;
+          margin: 16vh 7.5% 0;
+          h3{
+            font-size:120%;
+          }
+          >section{
+            width:20%;
+            >ul{
+              padding-left:1em;
+              >li{
+
+              }
+            }
+          }
+        }
+      }
+      #goToNextButton{
+        margin:10vh 0;
+        >div{
+          text-align: center;
+          >button{
+            cursor: pointer;
+            background-color: white;
+            border-radius: 32px;
+            border-right: none;
+            border-bottom:none;
+            box-shadow: 1px 2px 4px 0px #6c6c6c;
+            &:hover{
+              background-color: #c6c6c6;
+            }
+            >p{
+              margin:0;
+              padding:8px 32px;
+              font-size:20px;
+            }
+          }
+        }
+      }
+    }
+    // }
+  }
+  #blackWindow{
+    position:fixed;
+    visibility:hidden;
+    top:0;left:0;
+    opacity:0;
+    width:100vw;
+    height:100vh;
+    background-color: black;
+    z-index:100;
+    cursor: pointer;
+    >div{
+      width:100%;
+      height:100%;
+      position:relative;
+      #splashImg{
+        position:absolute;
+        display: block;
+        transition:transform 1s;
+        left:0;right:0;
+        top:0;bottom:0;
+        margin:auto;
+      }
+    }
+
+  }
+
+  main{
+    position:absolute;
+    top:0;
+    left:0;
+    h1{
+      font-size: 200%;
+      font-family: "游明朝";
+      text-align: center;
+      line-height: 300%;
+      font-weight: normal;
+    }
+    >article{
+      margin:40vh 0;
+      >h2{
+        text-align: center;
+        font-family: "游ゴシック";
+        font-size: 250%;
+        margin-bottom:15vh;
+        margin-top:0;
+        font-weight: lighter;
+      }
+    }
+    #navigationContainer{
+      margin:5vh 304px 0;
+      display: flex;
+      justify-content: space-between;
+      #myLogoAndNameClass{
+        #myLogo{
+          display: inline-block;
+          width:5vw;
+          >img{
+            display: block;
+          }
+        }
+        #myNameAndClass{
+          display: inline-block;
+          padding-left:0.5vw;
+          >p{
+            margin:0;
+            padding:0;
+          }
+          #myName{
+            font-size: 24px;
+            font-weight: 400;
+          }
+          #myClass{
+            font-size:16px;
+          }
+        }
+      }
+      #categoryContainer{
+        >ul{
+          margin-bottom:0;
+          margin-top: 32px;
+          padding:0;
+          >li{
+            display: inline-block;
+            width:6vw;
+            border: solid #6C6C6C 4px;
+            border-radius: 32px;
+            margin:0 4px;
+            &:hover{
+              background-color: #C6C6C6;
+            }
+            >a{
+              text-decoration: none;
+              color:#6C6C6C;
+              >p{
+                font-size: 12px;
+                margin: 8px;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+    #topMesseageContainer{
+      width:calc(100% - 304px * 2);
+      margin:20vh 304px 20vh;
+      >h1{
+        margin-top:0;
+        margin-left:0.5em;
+      }
+      >div{
+        width:100%;
+        position:relative;
+        height:4vw;
+        >a{
+          >button{
+            cursor: pointer;
+            position:absolute;
+            left:0;right:0;
+            margin:0 auto;
+            width:4vw;
+            height:4vw;
+            background-color: white;
+            border-radius: 50%;
+            border-right: none;
+            border-bottom:none;
+            box-shadow: 1px 2px 4px 0px #6c6c6c;
+            &:hover{
+              background-color: #c6c6c6;
+            }
+            >p{
+              margin:0;
+              font-size:32px;
+              writing-mode:vertical-rl;
+            }
+          }
+        }
+      }
+    }
+    #ProfileContainer{
+      margin:0 304px;
+      #faceImgContainer{
+        width:30%;
+        display: inline-block;
+        >img{
+          border-radius: 50%;
+          width:100%;
+        }
+      }
+      >section{
+        margin-left:10%;
+        width:59%;
+        display: inline-block;
+        #proflileMyName{
+          font-weight: 400;
+          font-family: "游明朝";
+          font-size:160%;
+        }
+        #descriptMe{
+          margin-top:0;
+          line-height: 200%;
+        }
+      }
+    }
+    #WorksContainer{
+      #garally{
+        display: flex;
+        flex-wrap: wrap;
+        >figure{
+          width:calc(100%/3);
+          height:40vh;
+          margin:0;
+          cursor: pointer;
+          overflow: hidden;
+          position:relative;
+          background-color: black;
+          >img{
+            position:absolute;
+            top:0;
+            left:0;
+            width: 100%;
+            height:100%;
+            object-fit: cover;
+            transition:transform 2s;
+            z-index:auto;
+          }
+          >.discriptFigure{
+            position: absolute;
+            opacity: 0;
+            background-color:white;
+            width:80%;
+            height:40%;
+            left:0;right:0;
+            top:0;bottom:0;
+            margin:auto;
+            transition:opacity 2s;
+            >h3{
+              text-align: center;
+              font-family: "游明朝";
+              margin:10% 0 0;
+              font-weight:bolder;
+              font-size: 150%;
+            }
+            >p{
+              text-align: center;
+              font-family: "游ゴシック";
+              margin-top:1%;
+            }
+          }
+          &:hover{
+            >img{
+              transform: scale(1.1);
+              opacity:0.4;
+            }
+            >div{
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+    }
+    #SkillsetContainer{
+      margin:0 304px;
+      #Skillset{
+        display: flex;
+        justify-content: space-between;
+        >article{
+          width:25%;
+          >h3{
+            font-size: 200%;
+            font-family: "游明朝";
+            margin-top:0;
+          }
+          >h3+p{
+            font-size: 130%;
+          }
+          .etcText{
+            text-align: right;
+          }
+        }
+      }
+    }
+    #ContactContainer{
+      margin-bottom:20vh;
+      >p{
+        text-align: center;
+        line-height: 300%;
+        font-size:130%;
+        >span{
+          font-family: "游明朝";
+        }
+      }
+      >div{
+        position: relative;
+        height:20vh;
+        >a{
+          text-decoration: none;
+          >button{
+            cursor: pointer;
+            position:absolute;
+            left:0;right:0;
+
+            height:4vw;
+            background-color: white;
+            border-right: none;
+            border-bottom:none;
+            //padding:16px 0;
+            // background-color: #C6C6C6;
+            width:20vw;
+            margin:10vh auto 0;
+            border-radius: 32px;
+            box-shadow: 1px 2px 4px 0px #6c6c6c;
+            &:hover{
+              background-color: #c6c6c6;
+            }
+            >p{
+              font-size:120%;
+              text-align: center;
+              margin:16px;
+            }
+          }
+        }
+      }
+    }
+  }
+  nav{
+    position: fixed;
+    bottom:5%;
+    right:5%;
+    visibility: none;
+    opacity:0;
+    transition: opacity 0.5s;
+    >button{
+      cursor: pointer;
+      left:0;right:0;
+      margin:0 auto;
+      width:4vw;
+      height:4vw;
+      background-color: rgba(255,255,255,0.6);
+      border-radius: 50%;
+      border-right: none;
+      border-bottom:none;
+      box-shadow: 4px 4px 8px 0px #6c6c6c;
+      &:hover{
+        background-color: #c6c6c6;
+      }
+      >a{
+        text-decoration: none;
+        >p{
+          text-align: center;
+          margin:0;
+          font-size:32px;
+          writing-mode:vertical-rl;
+          transform: scale(1,-1);
+        }
+      }
+    }
+  }
+  .navDisplay{
+    opacity:1;
+    display: block;
+  }
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles/index.min.css"></link>
+  <link rel="shortcat icon" href="img/myLogo.png"></link>
+  <script type="text/javascript" src="js/index.js"></script>
+  <title>Tashima's Protfolio'</title>
+  <!-- <script type="text/javascript" src="js/smooth-scroll.js"></script> -->
+</head>
+<body>
+  <div id="cancelButtonContainer" onclick="modalOff()" ><button><p>×</p></button></div>
+  <div id="modalWindow">
+    <div id="modalContentsContainer">
+      <figure id="modalTopImgContainer"><img src="img/wonlife.png" /></figure>
+      <section id="descriptionThisModal">
+        <div id="modalTitleContainer"><h1>Won-Life</h1></div>
+        <article id="aboutInfo">
+          <p>
+            　システム情報科学演習内のテーマの一つである、「IoTで医療現場をデザインする」プロジェクトに所属し、
+            近い将来、大きな問題となる可能性が高いリハビリテーションをテーマとして捉え、企画・制作したシステム。<br />
+            　論文などを調査し問題点を仮定することで、リハビリテーションに関する知識をある程度つけた後、フィールドワークとして、函館市内でリハビリテーションが有名な社会医療法人高橋病院を訪れ、実際の現場の問題点を探り、制作後にもレビューを頂き改善を行った。<br />
+            　本研究は現在、KDDI株式会社・東京女子医科大学から共同研究の申請を頂いている。
+          </p>
+        </article>
+
+
+        <section id="pointsOfWork">
+          <article>
+            <h3>テスト</h3>
+            <figure><img src="img/wonlife.png"></figure>
+            <p>
+              　テストテストテストテストテストテストテストテスト<br />
+              　テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト<br />
+              　テストテストテストテスト
+            </p>
+          </article>
+          <article>
+            <h3>テスト</h3>
+            <figure><img src="img/wonlife.png"></figure>
+            <p>
+              　テストテストテストテストテストテストテストテスト<br />
+              　テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト<br />
+              　テストテストテストテスト
+            </p>
+          </article>
+          <article>
+            <h3>テスト</h3>
+            <figure><img src="img/wonlife.png"></figure>
+            <p>
+              　テストテストテストテストテストテストテストテスト<br />
+              　テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト<br />
+              　テストテストテストテスト
+            </p>
+          </article>
+        </section>
+        <article id="listOfAboutInfo">
+          <section id="kindsOfWork">
+            <h3>担当部分</h3>
+            <ul>  <li><p>UX Design</p></li> <li><p>Front-end Engineering</p></li> <li><p>Project Manager</p></li>  </ul>
+          </section>
+          <section id="usedSkill">
+            <h3>使用スキル</h3>
+            <ul>  <li><p>JavaScript ES6</p></li> <li><p>CSS3</p></li> <li><p>HTML5</p></li>  </ul>
+          </section>
+          <section id="whenMade">
+            <h3>制作期間</h3>
+            <p>3年次</p>
+            <p>5月-11月 (7ヶ月間)</p>
+          </section>
+          <section id="member">
+            <h3>制作人数</h3>
+            <p>5名</p>
+            <p>(本大学4コース混合)</p>
+          </section>
+        </article>
+
+      </section>
+      <section id="goToNextButton">
+        <div onclick="goToNextWork"><button><p>次の作品へ »</p></button></div>
+      </section>
+    </div>
+  </div>
+  <div id="blackWindow" onclick="modalOff()"><div><img id="splashImg" src="img/splash.png" /></div></div>
+  <main id="main">
+    <article id="navigationContainer">
+      <div id="myLogoAndNameClass">
+        <img id="myLogo" src="img/myLogo.png">
+        <div id="myNameAndClass">
+          <p id="myName">TashimaTakumi</p>
+          <p id="myClass">UX DESIGN SE</p>
+        </div>
+      </div>
+      <div id="categoryContainer">
+        <ul>
+          <li><a href="#ProfileContainer"><p>PROFILE</p></a></li>
+          <li><a href="#WorksContainer"><p>WORKS</p></a></li>
+          <li><a href="#SkillsetContainer"><p>SKILL SET</p></a></li>
+        </ul>
+      </div>
+    </article>
+    <article id="topMesseageContainer">
+      <h1>ユーザーと真摯に向き合い、<br />課題の本質をDESIGNし、<br />最適なカタチに落とし込む、</h1>
+      <div><a href="#ProfileContainer"><button type="button"><p>»</p></button></a></div>
+    </article>
+    <article id="ProfileContainer">
+      <h2>PROFILE</h2>
+      <div id="faceImgContainer"><img src="img/face.jpg" /></div>
+      <section>
+        <p id="proflileMyName">田島 拓実</p>
+        <p id="descriptMe">
+          1997年、青森県八戸市に生まれる。<br />
+          高校生活の中でエンジニアリングに目覚め、海を渡り、未来大学へ進学することを決意。<br />
+          大学入学後、エンジニアリングに取り組む一方で、ユーザーニーズを捉える大切さに気が付き、デザインの道へ。<br />
+          現在は主に、フロントエンド系に力を入れている。
+        </p>
+      </section>
+    </article>
+    <article id="WorksContainer">
+      <h2>WORKS</h2>
+      <section id="garally">
+        <figure onclick="modalOn(1)">
+          <img src="img/wonlife.png" />
+          <div class="discriptFigure"><h3>Won-Life</h3><p>UX Design & Front-end Develop</p></div>
+        </figure>
+        <figure onclick="modalOn(2)">
+          <img src="img/ojisan.JPG" />
+          <div class="discriptFigure"><h3>メモリアルおじさん。</h3><p>Product/UX Design</p></div>
+        </figure>
+        <figure onclick="modalOn(3)">
+          <img src="img/siden.png" />
+          <div class="discriptFigure"><h3>函館市電Webサイト</h3><p>UI/UX Design & Front-end Develop</p></div>
+        </figure>
+        <figure onclick="modalOn(4)">
+          <img src="img/sotsuten.jpg" />
+          <div class="discriptFigure"><h3>卒展特設展示用パンフレット</h3><p>Concept/Graphic Design</p></div>
+        </figure>
+        <figure onclick="modalOn(5)">
+          <img src="img/recoa.PNG" />
+          <div class="discriptFigure"><h3>recoa</h3><p>Concept Design</p></div>
+        </figure>
+        <figure onclick="modalOn(6)">
+          <img src="img/otherworks.png" />
+          <div class="discriptFigure"><h3>Other Works</h3><p>My Works</p></div>
+        </figure>
+      </section>
+    </article>
+    <article id="SkillsetContainer">
+      <h2>SKILL SET</h2>
+      <section id="Skillset">
+        <article>
+          <h3>Business</h3>
+          <p>応用情報技術者試験<br />実用英語技能検定2級<br />日商簿記2級<br /><br /><br /><br /><br /><br /></p>
+          <p class="etcText">etc...</p>
+        </article>
+        <article>
+          <h3>Design</h3>
+          <p>
+            Adobe Illustorator<br />Adobe Photoshop<br />Adobe Dreamweaver<br />
+            Adobe XD<br />Adobe Premiere Pro<br />Adobe Color<br /><br /><br />
+          </p>
+          <p class="etcText">etc...</p>
+        </article>
+        <article>
+          <h3>Engineering</h3>
+          <p>
+            Android / Java<br />JavaScript / HTML / CSS<br />ReactNative<br />
+            Processing / Arduino<br />C / COBOL<br />mySQL / PHP<br />Unity / C#<br />
+          </p>
+          <p class="etcText">etc...</p>
+        </article>
+      </section>
+    </article>
+    <article id="ContactContainer">
+      <p>
+        これまで学んできた技術をすべて利用し、<br />
+        <span>「課題の本質をしっかりと捉え、分析し、求められているカタチで実現する。」</span><br />
+        私が得意なことは、その一点です。<br />
+      </p>
+      <div><a href=""><button type="button"><p>CONTACT ME »</p></button></a></div>
+    </article>
+  </main>
+  <nav id="nav">
+    <button><a href=""><p>»</p></a></button>
+  </nav>
+</body>
+</html>
