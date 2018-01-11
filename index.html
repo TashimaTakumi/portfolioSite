@@ -23,11 +23,11 @@
           </p>
         </article>
 
-        <article id="workSiteURLContainer"><a id="workSiteURL" target="_blank" href="hogehoge"><div><p>制作したサイトはこちら</p></div></a></article>
+        <article id="workSiteURLContainer"><a id="workSiteURL" target="_blank" href="hogehoge"><div><p id="workSiteText">制作したサイトはこちら</p></div></a></article>
         <section id="pointsOfWork">
           <article>
             <h3 id="pointsTitle1">テスト</h3>
-            <figure><img id="pointsImg1" src="img/wonlife.png"></figure>
+            <figure><img id="pointsImg1" onclick="biggerImgOpen()" src="img/wonlife.png"></figure>
             <p id="pointsText1">
               　テストテストテストテストテストテストテストテスト<br />
               　テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト<br />
@@ -36,7 +36,7 @@
           </article>
           <article>
             <h3 id="pointsTitle2">テスト</h3>
-            <figure><img id="pointsImg2" src="img/wonlife.png"></figure>
+            <figure><img id="pointsImg2" onclick="biggerImgOpen()" src="img/wonlife.png"></figure>
             <p id="pointsText2">
               　テストテストテストテストテストテストテストテスト<br />
               　テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト<br />
@@ -45,8 +45,64 @@
           </article>
           <article>
             <h3 id="pointsTitle3">テスト</h3>
-            <figure><img id="pointsImg3" src="img/wonlife.png"></figure>
+            <figure><img id="pointsImg3" onclick="biggerImgOpen()" src="img/wonlife.png"></figure>
             <p id="pointsText3">
+              　テストテストテストテストテストテストテストテスト<br />
+              　テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト<br />
+              　テストテストテストテスト
+            </p>
+          </article>
+        </section>
+        <section id="forOtherWorks">
+          <article>
+            <h3>1. LampShade -生命-</h3>
+            <figure><img onclick="biggerImgOpen()" src="img/lampShade.JPG"></figure>
+            <p>
+              　情報デザインを始めて、初めて制作した作品。<br />
+              　「色」・「形」・「位置によって変わる見え方」の3つの要素によって、人々の生命活動を表現している。<br />
+              　Illustratorとレーザーカッターの利用方法を学んだ。
+            </p>
+          </article>
+          <article>
+            <h3>2. 学生フリーペーパー -SPOT-</h3>
+            <figure><img onclick="biggerImgOpen()" src="img/spot2.jpg"></figure>
+            <p>
+              　函館市の学生が企画・編集・発行をすべて担当するフリーペーパー「SPOT」の創刊を行った。<br />
+              　デザイナーとして関わり、フリーペーパーを支える協賛先の広告の作成を全て担当した。<br />
+              　IllustratorとPhotoshopの利用方法を学んだ。
+            </p>
+          </article>
+          <article>
+            <h3>WaiWai隊 チームロゴ</h3>
+            <figure><img onclick="biggerImgOpen()" src="img/WaiWaiLogo.png"></figure>
+            <p>
+              　「メモリアルおじさん。」を制作したチームのロゴを制作した。<br />
+              　「活気がある」、「飲み会が好き」、「ダジャレが言い合える関係」を表現したロゴにした。<br />
+              　Illustratorを利用し、制作した。
+            </p>
+          </article>
+          <article>
+            <h3>MedicalFun プロジェクトロゴ</h3>
+            <figure><img onclick="biggerImgOpen()" src="img/funmedical_logo.png"></figure>
+            <p>
+              　3年次PBLのプロジェクトロゴを制作した。<br />
+              　未来大学の医療プロジェクトということを色で表し、「自分たちから始める」ということを未来大らしく電源ボタンを利用して表現した。<br />
+              　Illustratororを利用。
+            </p>
+          </article>
+          <article>
+            <h3>テスト</h3>
+            <figure><img onclick="biggerImgOpen()" src="img/wonlife.png"></figure>
+            <p>
+              　テストテストテストテストテストテストテストテスト<br />
+              　テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト<br />
+              　テストテストテストテスト
+            </p>
+          </article>
+          <article>
+            <h3>テスト</h3>
+            <figure><img onclick="biggerImgOpen()" src="img/wonlife.png"></figure>
+            <p>
               　テストテストテストテストテストテストテストテスト<br />
               　テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト<br />
               　テストテストテストテスト
@@ -81,7 +137,11 @@
       </section>
     </div>
   </div>
+
   <div id="blackWindow" onclick="modalOff()"><div><img id="splashImg" src="img/splash.png" /></div></div>
+
+  <section id="biggerImgWindow"><div><img id="biggerImg" src=""/></div></section>
+
   <main id="main">
     <article id="navigationContainer">
       <div id="myLogoAndNameClass">
@@ -178,7 +238,7 @@
         <span>「課題の本質をしっかりと捉え、分析し、求められているカタチで実現する。」</span><br />
         その一点です。<br />
       </p>
-      <div><a href=""><button type="button"><p>CONTACT ME »</p></button></a></div>
+      <div><a target="_blank" href="https://drive.google.com/open?id=1faIrEMsL5PXk9rw7a9K5g4xU929PHhWxXFsdYxRWoqc"><button type="button"><p>CONTACT ME »</p></button></a></div>
     </article>
   </main>
   <nav id="nav">

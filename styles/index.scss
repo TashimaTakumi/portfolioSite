@@ -112,14 +112,13 @@ body{
           }
         }
 
-        #pointsOfWork{
+        #pointsOfWork , #forOtherWorks{
           display:flex;
           justify-content: space-between;
+          flex-wrap: wrap;
           margin-top:24vh;
           >article{
             width:32%;
-            height:75vh;
-            background-color: #f8f8f8;
             padding:1.5vh 0;
             >h3{
               text-align: center;
@@ -136,11 +135,21 @@ body{
                 width:100%;
                 height:100%;
                 object-fit: cover;
+                cursor: pointer;
               }
             }
             >p{
               width:80%;
+              line-height: 2em;
               margin:2vh auto;
+            }
+          }
+        }
+        #forOtherWorks{
+          >article{
+            padding-bottom:10vh;
+            >h3{
+              font-family: "游明朝";
             }
           }
         }
@@ -156,7 +165,6 @@ body{
             >ul{
               padding-left:1em;
               >li{
-
               }
             }
           }
@@ -187,7 +195,6 @@ body{
         }
       }
     }
-    // }
   }
   #blackWindow{
     position:fixed;
@@ -212,7 +219,31 @@ body{
         margin:auto;
       }
     }
-
+  }
+  #biggerImgWindow{
+    position:fixed;
+    z-index: 104;
+    width:80vw;
+    height:95vh;
+    background-color: white;
+    visibility: hidden;
+    opacity:0;
+    top:0;left:0;bottom:0;right:0;
+    margin:auto;
+    transition:opacity 0.3s;
+    >div{
+      width:80%;
+      height:95%;
+      margin:2.5% 10%;
+      position:relative;
+      #biggerImg{
+        max-width:100%;
+        max-height:100%;
+        position:absolute;
+        top:0;left:0;bottom:0;right:0;
+        margin:auto;
+      }
+    }
   }
 
   main{
