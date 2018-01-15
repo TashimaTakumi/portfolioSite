@@ -3,7 +3,7 @@ body{
   padding:0;
   position:relative;
   p{
-    font-family: "游ゴシック";
+    font-family: YuGothic,"游ゴシック","Yu Gothic",sans-serif;
     color:#0f0f0f;
     font-weight:400;
   }
@@ -66,7 +66,7 @@ body{
       }
       #modalTitleContainer{
         >h1{
-          font-family: "游明朝";
+          font-family: YuMincho,"游明朝","Yu Mincho",serif;
           margin: 4vh 0 0;
           text-align: center;
           font-size:300%;
@@ -152,7 +152,7 @@ body{
           >article{
             padding-bottom:10vh;
             >h3{
-              font-family: "游明朝";
+              font-family: YuMincho,"游明朝","Yu Mincho",serif;
             }
           }
         }
@@ -255,7 +255,7 @@ body{
     left:0;
     h1{
       font-size: 200%;
-      font-family: "游明朝";
+      font-family: YuMincho,"游明朝","Yu Mincho",serif;
       text-align: center;
       line-height: 300%;
       font-weight: normal;
@@ -264,7 +264,7 @@ body{
       margin:40vh 0;
       >h2{
         text-align: center;
-        font-family: "游ゴシック";
+        font-family: YuGothic,"游ゴシック","Yu Gothic",sans-serif;
         font-size: 250%;
         margin-bottom:15vh;
         margin-top:0;
@@ -378,7 +378,7 @@ body{
         display: inline-block;
         #proflileMyName{
           font-weight: 400;
-          font-family: "游明朝";
+          font-family: YuMincho,"游明朝","Yu Mincho",serif;
           font-size:160%;
         }
         #descriptMe{
@@ -421,14 +421,14 @@ body{
             transition:opacity 2s;
             >h3{
               text-align: center;
-              font-family: "游明朝";
+              font-family: YuMincho,"游明朝","Yu Mincho",serif;
               margin:10% 0 0;
               font-weight:bolder;
               font-size: 150%;
             }
             >p{
               text-align: center;
-              font-family: "游ゴシック";
+              font-family: YuGothic,"游ゴシック","Yu Gothic",sans-serif;
               margin-top:1%;
             }
           }
@@ -455,7 +455,7 @@ body{
           >h3{
             color:#1f1f1f;
             font-size: 200%;
-            font-family: "游明朝";
+            font-family: YuMincho,"游明朝","Yu Mincho",serif;
             margin-top:0;
           }
           >h3+p{
@@ -475,7 +475,7 @@ body{
         font-size:130%;
         color:#1f1f1f;
         >span{
-          font-family: "游明朝";
+          font-family: YuMincho,"游明朝","Yu Mincho",serif;
           color:black;
         }
       }
