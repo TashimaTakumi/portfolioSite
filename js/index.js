@@ -15,7 +15,7 @@ const abtInfo = ["　近い将来、大きな問題となることが予測さ�
 const workSiteURLHref=["https://tashimatakumi.github.io/FunMedical/","https://www.youtube.com/watch?v=4co9j3zYrLc&feature=youtu.be","https://tashimatakumi.github.io/SidenWeb/"]
 
 const pointsTitleH31=["リハビリ現場における問題","「自撮り」の問題点","従来サイトの考察","制作にあたって","ペルソナの選定"];
-const pointsImgSrc1=["img/riha1.jpg","img/ojisan2.jpg","img/siden2.PNG","img/sotsuten2.jpg","img/recoa2.PNG"];
+const pointsImgSrc1=["img/riha1.jpg","img/ojisan2.jpg","img/siden2.PNG","img/sotsuten2.jpg","img/recoa1.PNG"];
 const pointsTextP1=["　リハビリを評価する項目の一つであるFIMは国際的な評価基準であり、信頼性も高い一方、評価項目の多さによる監督者への負担がその普及を妨げている。<br />　また、患者側においては、「患者が効果を実感出来ずに、リハビリに対する意欲を失い、それが原因で効果が更に発揮されなくなる」という、負のスパイラルが起こることが問題となっている。",
                     "　「自撮り」は、他人に撮ってもらう手法に比べ、他人に迷惑をかけず、自分の好きな角度やタイミングで写真を撮ることが出来る。<br />　その一方で、自撮り棒などの道具を利用するため、距離制限があるため観光地全体を綺麗に写すことは難しく、また、撮影者が一番大きく写ってしまうというデメリットを抱えている。",
                     "　あらかじめほしい情報を考え、従来サイトを参照すると必要な情報にたどり着くことが困難なことがわかる。<br />　この理由として、サイトを訪れる際に多くのユーザーが求めてくるであろう情報が、深い階層下にあったり、ページの端の狭い領域に置かれていたりすることが挙げられると考察した。",
@@ -31,7 +31,7 @@ const pointsTextP2=["　リハビリ監督者の負担を減らしつつ、FIM�
                     "　思い出が深い家具を整理出来ずにいる人（以下Aさん）と、自分好みの家具を安く手に入れたい人（以下Bさん）をつなぐサービスを提案した。<br />　本サービスは、Aさんの整理したいが、大切に使ってほしい家具を、デザイナーがBさんの要望を受けてリノベーションし、販売するCtoBtoCサービスである。<br />　1年目の利益は2,736,000円見込まれている。"];
 
 const pointsTitleH33=["患者側のソリューション","工夫点と結果","評価実験","色やフォントの工夫","留意した点と結果"];
-const pointsImgSrc3=["img/wonlife.png","","img/siden4.PNG","img/sotsuten.jpg","img/recoa4.PNG"];
+const pointsImgSrc3=["img/wonlife.png","img/ojisan4.JPG","img/siden4.PNG","img/sotsuten.jpg","img/recoa4.PNG"];
 const pointsTextP3=["　今回は特に負のスパイラルに陥りやすい高齢者を対象に、その入り口である「患者のモチベーション低下」を阻止するためのシステムを考案した。<br />　対象が高齢リハビリ患者であるため、インタラクションは避け、また、病室に1人1台あり日常的に使っているTVを利用し、一方向のコミュニケーションによってリハビリの効果を実現できるようにした。",
                    "　提案に際し、問題点を解決することはもちろんのこと、実際に従来の撮影手法よりも使っていただくために、容易に利用できる形で実現する点に留意した。また、説明をせずとも利用していただけることにも注力した。<br />　結果として、実際に函館市西部地区にて展示を行った際、自撮り棒を持参していた観光客でさえ、本製品を利用し写真撮影を行っている風景が見受けられた。",
                    "　制作したWebサイトと従来のWebサイトについて、評価実験を行った。対象は同じ課題に取り組んでいた学生7名であったため、情報の探索時間という点において非常に不利な条件ではあったが、有意な差を確認できた。<br />　また、イベントについても新たに知ってもらうことに成功した。",
@@ -188,13 +188,14 @@ function biggerImgOpen(){
   cancelButtonContainer.onclick=new Function("biggerImgClose()");
 }
 function biggerImgClose(){
-  biggerImgWindow.style.visibility="hidden";
   biggerImgWindow.style.opacity="0";
-
   blackWindow.style.zIndex="100";
   cancelButtonContainer.style.zIndex="102";
-  blackWindow.onclick=new Function("modalOff()");
-  cancelButtonContainer.onclick=new Function("modalOff()");
+  setTimeout(()=>{
+    biggerImgWindow.style.visibility="hidden";
+    blackWindow.onclick=new Function("modalOff()");
+    cancelButtonContainer.onclick=new Function("modalOff()");
+  },0.8*1000);
 }
 
 
@@ -228,7 +229,7 @@ window.onscroll = function(){
     nav.style.visibility="visible";
     nav.style.opacity="1";
   }else{
-    nav.style.visibility="none";
+    nav.style.visibility="hidden";
     nav.style.opacity="0";
   }
 }
