@@ -43,7 +43,7 @@ const listOfKindsOfWorkLi=["<li><p>UX Design</p></li> <li><p>Project Management<
                           "<li><p>UX Design</p></li> <li><p>UI Design</p></li> <li><p>Front-end Engineering</p></li>",
                           "<li><p>Concept Design</p></li> <li><p>Graphic Design</p></li>",
                           "<li><p>Project Management</p></li> <li><p>Concept Design</p></li>"];
-const listOfUsedSkillsLi=["<li><p>JavaScript ES6</p></li> <li><p>CSS3</p></li> <li><p>HTML5</p></li> <li><p>XD</p></li>",
+const listOfUsedSkillsLi=["<li><p>JavaScript ES7</p></li> <li><p>CSS3</p></li> <li><p>HTML5</p></li> <li><p>XD</p></li>",
                          "<li><p>Processing</p></li> <li><p>Arduino</p></li> <li><p>Illustorator</p></li>",
                          "<li><p>JavaScript</p></li> <li><p>CSS3</p></li> <li><p>HTML5</p></li> <li><p>Illustorator</p></li> <li><p>Photoshop</p></li>",
                          "<li><p>Illustorator</p></li> <li><p>Photoshop</p></li>",
