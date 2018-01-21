@@ -133,6 +133,7 @@ body{
             width:32%;
             padding:1.5vh 0;
             >h3{
+              font-family: YuGothic,"游ゴシック","Yu Gothic",sans-serif;
               text-align: center;
               margin:1vh 0;
               font-weight: 400;
@@ -148,7 +149,8 @@ body{
                 height:100%;
                 -o-object-fit: cover;
                 object-fit: cover;
-                cursor: pointer;
+                cursor: -webkit-zoom-in;
+                cursor: zoom-in;
                 &:hover{
                   opacity: 0.8;
                 }
@@ -169,6 +171,48 @@ body{
             }
           }
         }
+        #howToMade{
+          margin:16vh 0 0;
+          >h2{
+            text-align: center;
+            font-family: YuGothic,"游ゴシック","Yu Gothic",sans-serif;
+            font-size: 2em;
+            font-weight: normal;
+          }
+          >article{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: space-between;
+            -ms-flex-pack: space-between;
+            justify-content: space-between;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            margin:8vh 0;
+            >figure{
+              margin:0;
+              padding:0;
+              width:45%;
+              >img{
+                width:100%;
+              }
+            }
+            >div{
+              width:50%;
+              margin:4vh 0;
+              >h3{
+                font-size: 1.5em;
+                margin: 0;
+                font-weight: normal;
+                font-family: YuGothic,"游ゴシック","Yu Gothic",sans-serif;
+              }
+              >p{
+                margin-left:1em;
+              }
+            }
+          }
+        }
         #listOfAboutInfo{
           display: -webkit-box;
           display: -ms-flexbox;
@@ -179,6 +223,7 @@ body{
           margin: 24vh 7.5% 0;
           h3{
             font-size:120%;
+            font-family: YuGothic,"游ゴシック","Yu Gothic",sans-serif;
           }
           >section{
             width:20%;
