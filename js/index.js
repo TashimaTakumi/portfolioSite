@@ -84,7 +84,8 @@ function modalOn(newDispNo){
   blackWindow.style.visibility="visible";
   blackWindow.style.opacity="0.8";
 
-  openTiming=window.scrollTop;
+  //openTiming=document.body.scrollTop || document.documentElement.scrollTop;
+  openTiming='scrollingElement' in document ? document.scrollingElement.scrollTop : document.documentElement.scrollTop;
   main.style.position="fixed";
   main.style.top=`${openTiming*-1}px`;
   main.style.overflowY="scroll";
@@ -111,7 +112,7 @@ function modalOn(newDispNo){
       modalWindow.style.opacity="1";
       modalWindow.style.width="80vw";
       modalWindow.style.height="95vh";
-      modalWindow.scrollTo(0,0);
+      modalWindow.scrollTop=0;
       setTimeout(()=>{
         modalContentsContainer.style.visibility="visible";
         modalContentsContainer.style.opacity="1";
@@ -207,7 +208,7 @@ function goToNextOrBeforeWork(NextOrBefore){
     }else if(NextOrBefore=="Before"){
       setModalContents(--dispNo);
     }
-    modalWindow.scrollTo(0,0);
+    modalWindow.scrollTop=0;
     setTimeout(()=>{
       modalContentsContainer.style.visibility="visible";
       modalContentsContainer.style.opacity="1";
