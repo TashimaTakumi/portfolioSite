@@ -153,7 +153,7 @@ function setModalContents(dispNo){
     pointsOfWork.style.display="flex";
     forOtherWorks.style.display="none";
 
-    howToMade.style.display="flex";
+    howToMade.style.display="block";
 
     howToMadeDescriptionImg1.src=howToMadeDescriptionImgSrc1[dispNo];
     howToMadeDescriptionH31.textContent=howToMadeDescriptionH31Text[dispNo];
