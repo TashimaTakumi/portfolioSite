@@ -147,23 +147,23 @@ function setModalContents(dispNo){
   if(dispNo==5){
     pointsOfWork.style.display="none";
     forOtherWorks.style.display="flex";
-    howToMade.style.display="none";
+    // howToMade.style.display="none";
 
   }else{
     pointsOfWork.style.display="flex";
     forOtherWorks.style.display="none";
 
-    howToMade.style.display="block";
-
-    howToMadeDescriptionImg1.src=howToMadeDescriptionImgSrc1[dispNo];
-    howToMadeDescriptionH31.textContent=howToMadeDescriptionH31Text[dispNo];
-    howToMadeDescriptionP1.innerHTML=howToMadeDescriptionP1Text[dispNo];
-    howToMadeDescriptionImg2.src=howToMadeDescriptionImgSrc2[dispNo];
-    howToMadeDescriptionH32.textContent=howToMadeDescriptionH32Text[dispNo];
-    howToMadeDescriptionP2.innerHTML=howToMadeDescriptionP2Text[dispNo];
-    howToMadeDescriptionImg3.src=howToMadeDescriptionImgSrc3[dispNo];
-    howToMadeDescriptionH33.textContent=howToMadeDescriptionH33Text[dispNo];
-    howToMadeDescriptionP3.innerHTML=howToMadeDescriptionP3Text[dispNo];
+    // howToMade.style.display="block";
+    //
+    // howToMadeDescriptionImg1.src=howToMadeDescriptionImgSrc1[dispNo];
+    // howToMadeDescriptionH31.textContent=howToMadeDescriptionH31Text[dispNo];
+    // howToMadeDescriptionP1.innerHTML=howToMadeDescriptionP1Text[dispNo];
+    // howToMadeDescriptionImg2.src=howToMadeDescriptionImgSrc2[dispNo];
+    // howToMadeDescriptionH32.textContent=howToMadeDescriptionH32Text[dispNo];
+    // howToMadeDescriptionP2.innerHTML=howToMadeDescriptionP2Text[dispNo];
+    // howToMadeDescriptionImg3.src=howToMadeDescriptionImgSrc3[dispNo];
+    // howToMadeDescriptionH33.textContent=howToMadeDescriptionH33Text[dispNo];
+    // howToMadeDescriptionP3.innerHTML=howToMadeDescriptionP3Text[dispNo];
 
     pointsTitle1.innerHTML=pointsTitleH31[dispNo];
     pointsImg1.src=pointsImgSrc1[dispNo];
