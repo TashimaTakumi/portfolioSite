@@ -84,7 +84,6 @@ function modalOn(newDispNo){
   blackWindow.style.visibility="visible";
   blackWindow.style.opacity="0.8";
 
-  //openTiming=document.body.scrollTop || document.documentElement.scrollTop;
   openTiming='scrollingElement' in document ? document.scrollingElement.scrollTop : document.documentElement.scrollTop;
   main.style.position="fixed";
   main.style.top=`${openTiming*-1}px`;
