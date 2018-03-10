@@ -262,14 +262,18 @@ function modalOff(){
 }
 
 window.onscroll = function(){
-  scrollTop=window.pageYoffset || document.documentElement.scrollTop;
-  ProfileContainerTop=ProfileContainer.getBoundingClientRect().top + scrollTop;
-  if(window.scrollTop >= ProfileContainerTop){
+  console.log(window.pageYoffset);
+  console.log(document.documentElement.scrollTop);
+  let nowScrollTop=window.pageYoffset || document.documentElement.scrollTop;
+  ProfileContainerTop=ProfileContainer.getBoundingClientRect().top + nowScrollTop;
+  if(nowScrollTop >= ProfileContainerTop){
     console.log("hey!");
     nav.style.visibility="visible";
     nav.style.opacity="1";
   }else{
-    nav.style.visibility="hidden";
     nav.style.opacity="0";
+    setTimeout(()=>{
+      nav.style.visibility="hidden";
+    },0.5*1000);
   }
 }
